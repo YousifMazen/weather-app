@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     getCoordinatesByCityName() {
-      const apiKey = "13846081f133e97cd038984ca7fcaa1e";
+      const apiKey = "";
       const apiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${this.selectedCity}&appid=${apiKey}`;
 
       fetch(apiUrl)
@@ -46,7 +46,7 @@ export default {
     },
 
     getWeatherByCoordinates(lat, lon) {
-      const apiKey = "13846081f133e97cd038984ca7fcaa1e";
+      const apiKey = "";
       const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
       fetch(apiUrl)
